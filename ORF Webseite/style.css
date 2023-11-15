@@ -1,0 +1,124 @@
+
+body {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+
+  header {
+    color: white;
+    padding: 20px;
+    text-align: left;
+    background: #16416b;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul,
+  footer nav ul {
+    list-style: none;
+    text-align: left;
+  }
+  
+  nav ul li,
+  footer nav ul li {
+    display: inline;
+    margin-right: 25px;
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(85, 85, 196);
+  }
+  
+
+  
+  .news {
+    background: steelblue;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .news p1 {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .news p1 {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    display: block; 
+}
+  
+  .inland,
+  .ausland {
+    background: white;
+    color: black;
+    padding-top: 50px;
+  }
+  
+  .inland h1,
+  .ausland h1 {
+    font-size: 24px;
+  }
+  
+  .inland h2,
+  .ausland h2,
+  .inland p,
+  .ausland p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  
+  img { 
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .putin {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background: lightblue;
+    border-left: 10px solid dodgerblue;
+  
+  }
+  
+
+  
+  .vladimir img {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+  
+  }
+  
+  .adresse {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-style: normal;
+    border-top: 1px solid #000;
+  }
+  
+  
+  footer {
+    background: #16416b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+  }
+  
+  .navbar1 a:hover {
+    background-color: rgb(85, 85, 196);
+  }
+  
+  footer nav ul li {
+    color: #fff;
+    margin-left: 10px;
+  }
