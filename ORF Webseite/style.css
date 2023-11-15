@@ -8,7 +8,7 @@ body {
 
   header {
     color: white;
-    padding: 20px;
+    padding: 12px;
     text-align: left;
     background: #16416b;
   }
@@ -33,9 +33,7 @@ body {
   .navbar a:hover {
     background-color: rgb(85, 85, 196);
   }
-  
-
-  
+    
   .news {
     background: steelblue;
     padding: 20px;
@@ -43,14 +41,19 @@ body {
     color: white;
   }
   
-  .news p1 {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+  .news img {
+    vertical-align: middle;
   }
-  .news p1 {
+
+  .news h1 {
+    font-size: 36px; 
+    margin-bottom: 50px;
+}
+
+
+  .p1 {
     color: white;
-    margin: 0 auto;
+    margin-bottom: 2px;
     text-align: center;
     display: block; 
 }
@@ -92,10 +95,10 @@ body {
   
 
   
-  .vladimir img {
-    width: 100px;
+  .putin img {
+    width: 130px;
     position: absolute;
-    left: 50%;
+    left: 30%;
   
   }
   
@@ -104,6 +107,7 @@ body {
     margin-bottom: 20px;
     font-style: normal;
     border-top: 1px solid #000;
+    font-style: italic;
   }
   
   
