@@ -1,0 +1,138 @@
+body {
+  background-color: red;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  color: red;
+  position: relative;
+ 
+}
+#sharingan {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#madara.amv {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; /* Hinzugefügt, um das Video hinter den Text zu legen */
+}
+
+.hero {
+  position: relative; /* Hinzugefügt */
+  z-index: 1; /* Hinzugefügt, um den Text über das Video zu legen */
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #ffcc00;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3em;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Responsiveness */
+
+@media (max-width: 992px) {
+  header {
+    padding: 10px;
+  }
+
+  nav a {
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
