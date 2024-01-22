@@ -2,106 +2,32 @@ body {
   background-color: red;
   color: white;
   font-family: sans-serif;
+  margin: 0;
 }
 
-header {
-  background-color: black;
-  padding: 20px;
-  color: red;
-  position: relative;
- 
-}
-#sharingan {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-}
-
-h1 {
-  font-size: 4em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-nav a:hover {
-  background-color: #ccc;
-  color: #fff;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  background-color: black;
-  border-radius: 10px;
-  padding: 40px;
-  margin-bottom: 40px;
-}
-.video-container {
-  position: relative;
-  overflow: hidden;
-}
-
-#madara.amv {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -1; /* Hinzugefügt, um das Video hinter den Text zu legen */
-}
-
-.hero {
-  position: relative; /* Hinzugefügt */
-  z-index: 1; /* Hinzugefügt, um den Text über das Video zu legen */
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.5em;
-  color: #ffcc00;
-}
-
-p {
-  font-size: 1.2em;
-}
-
-.hero {
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 3em;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  background-color: black;
-}
-
-footer p {
-  margin-bottom: 0;
-}
 
 /* Responsiveness */
 
-@media (max-width: 992px) {
+@media only screen and (min-width: 768px) {
   header {
     padding: 10px;
   }
 
   nav a {
-    padding: 5px 10px;
-    margin-right: 5px;
+    color: #fff;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  nav a:hover {
+    background-color: #ccc;
+    color: #fff;
   }
 
   main {
@@ -115,19 +41,174 @@ footer p {
   footer {
     padding: 10px;
   }
+
+  #navbar {
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .menu-list {
+    list-style: none;
+    display: flex;
+  }
+
+  .menu-list li {
+    margin-right: 20px;
+  }
+
+  .menu-list li:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .menu-dropdown {
+    display: none;
+  }
+
+  header {
+    background-color: #040504;
+    padding: 20px;
+    color: red;
+    position: relative;
+
+  }
+
+  #sharingan {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    max-height: 35%;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+
+  #home {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #biografie h2,
+  #biografie p,
+  {
+  color: #ffcc00;
 }
 
-@media (max-width: 768px) {
+#biografie li {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ffcc00;
+  padding: 10px;
+  text-align: left;
+  font-size: 17px;
+}
+
+th {
+  background-color: #ffcc00;
+  color: black;
+}
+
+
+
+#geschichte {
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.madara1 {
+  float: right;
+  width: 20%;
+}
+
+#geschichte h2,
+#geschichte h3 {
+  color: #ffcc00;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
   header {
     text-align: center;
   }
 
-  nav {
-    display: none;
-  }
-
   section {
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -135,4 +216,192 @@ footer p {
   footer {
     text-align: center;
   }
+
+  .menu-dropdown {
+    display: block;
+    margin-top: 5px;
+  }
+
+  #navbar {
+    background-color: black;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .menu-list li:nth-child(1),
+  .menu-list li:nth-child(2),
+  .menu-list li:nth-child(3),
+  .menu-list li:nth-child(4),
+  .menu-list li:nth-child(5) {
+    display: none;
+  }
+
+  .submenu {
+    display: none;
+  }
+
+  .menu-dropdown:hover .submenu {
+    display: block;
+  }
+
+  .submenu a {
+    color: white;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: left;
+  }
+
+  .menu-dropdown:hover ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .menu-dropdown img {
+    margin-right: 0.5rem;
+    height: 20px;
+  }
+
+  header {
+    background-color: #040504;
+    padding: 20px;
+    color: red;
+    position: relative;
+
+  }
+
+  #sharingan {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    max-height: 35%;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    color: #ffcc00;
+  }
+
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    background-color: black;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+
+
+
+  #home {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #biografie h2,
+  #biografie p,
+  {
+  color: #ffcc00;
+}
+
+#biografie li {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ffcc00;
+  padding: 10px;
+  text-align: left;
+  font-size: 17px;
+}
+
+th {
+  background-color: #ffcc00;
+  color: black;
+}
+
+#geschichte {
+  justify-content: space-between;
+}
+
+.madara1 {
+  float: right;
+  width: 35%;
+}
+
+#geschichte h2 {
+  t;
+}
+
+#geschichte p {
+  font size: 1px;
+}
+
+#geschichte h2,
+#geschichte h3 {
+  color: #ffcc00;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: black;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+}
+
+#madara.amv {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
