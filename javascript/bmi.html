@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Rechner</title>
+</head>
+<body>
+    <h1>BMI-Rechner</h1>
+    <form id="bmiForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
+        
+        <label for="groesse">Größe (in Metern):</label>
+        <input type="number" id="groesse" step="0.01" min="0" required><br><br>
+        
+        <label for="gewicht">Gewicht (in Kilogramm):</label>
+        <input type="number" id="gewicht" step="0.01" min="0" required><br><br>
+        
+        <button type="button" onclick="berechneBMI()">BMI ausrechnen</button><br><br>
+        
+        <label for="ergebnis">Ergebnis:</label>
+        <span id="ergebnis"></span>
+    </form>
+
+    <script>
+        class Person {
+            #name;
+            #groesse;
+            #gewicht;
+            static staat = 'AT';
+            constructor(obj) {
+                this.#name = obj.name;
+                this.#groesse = obj.groesse;
+                this.#gewicht = obj.gewicht;
+            }
+            get name() {
+                return this.#name;
+            }
+            set name(name) {
+                throw new Error('kann nicht gesetzt werden');
+            }
+            bmi() {
+                return this.#gewicht / this.#groesse ** 2;
+            }
+            toString() {
+                return `${this.#name} ist ${this.#gewicht}kg schwer und ${this.#groesse}m groß (BMI: ${this.bmi()})`;
+            }
+        }
+
+        function berechneBMI() {
+            const name = document.getElementById('name').value;
+            const groesse = parseFloat(document.getElementById('groesse').value);
+            const gewicht = parseFloat(document.getElementById('gewicht').value);
+
+            const person = new Person({ name, groesse, gewicht });
+            const bmiErgebnis = person.toString();
+
+            document.getElementById('ergebnis').innerText = bmiErgebnis;
+        }
+    </script>
+</body>
+</html>
