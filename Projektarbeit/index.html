@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fußballtabellenverwaltung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fußballtabellenverwaltung</h1>
+    <div class="container">
+        <div class="input-section">
+            <h2>Ergebnisse Eintragen</h2>
+            <label for="team-a">Team A:</label>
+            <select id="team-a"></select>
+            <label for="team-b">Team B:</label>
+            <select id="team-b"></select>
+            <button id="add-result">Ergebnis Hinzufügen</button>
+            <button id="clear-results">Ergebnisse Löschen</button>
+        </div>
+        <div class="table-section">
+            <h2>Aktuelle Tabelle</h2>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>Gespielte Spiele</th>
+                        <th>Gewonnen</th>
+                        <th>Unentschieden</th>
+                        <th>Verloren</th>
+                        <th>Punkte</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
