@@ -11,7 +11,7 @@ const state = {
     ]
 };
 
-// 2. FUNCTIONS
+// FUNCTIONS
 function updateTeamStats(team, result) {
     if (result === 'win') team.wins++;
     if (result === 'draw') team.draws++;
